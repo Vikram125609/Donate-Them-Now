@@ -1,0 +1,554 @@
+/* Design of Navigation Bar */
+:root {
+     --font-family: 'Rubik', sans-serif;
+     --White: white;
+     --Orange: #fdbb00;
+     --Green: #60bc0f;
+     --Font_For_Heading: 'Open Sans', sans-serif;
+}
+
+html {
+     font-size: 10px;
+}
+
+* {
+     margin: 0px;
+     padding: 0px;
+     font-size: 2rem;
+}
+
+/* .img
+{
+     object-fit: cover;
+     width: 70px;
+     padding-left: 3rem;
+} */
+
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 2rem;
+
+}
+
+.nav-right .nav-list {
+     list-style-type: none;
+     display: flex;
+}
+
+.nav-right .nav-list li {
+     padding: 1rem;
+}
+
+.nav-right .nav-list li a {
+     text-decoration: none;
+     font-size: 2rem;
+}
+
+.nav-right {
+     padding-right: 4rem;
+}
+
+/* Copied From Google That Animation Wala Part */
+.hover-underline-animation {
+     display: inline-block;
+     position: relative;
+     color: var(--Orange);
+}
+
+.hover-underline-animation:after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: var(--Orange);
+     transform-origin: bottom right;
+     transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+     transform: scaleX(1);
+     transform-origin: bottom left;
+}
+
+/* Here Is SomeThing Important */
+header {
+     /* background: linear-gradient(rgba(3, 1, 10, .5), rgba(3, 1, 10, .5)), url('https://preview.colorlib.com/theme/seelife/img/banner/xhome-banner.jpg.pagespeed.ic.o5Wrab3PvI.jpg') no-repeat scroll center center; */
+     background: linear-gradient(rgba(3, 1, 10, .5), rgba(3, 1, 10, .5)), url('./xhome-banner.jpg.pagespeed.ic.o5Wrab3PvI.webp') no-repeat scroll center center;
+     background-size: cover;
+     height: 100vh;
+     position: relative;
+}
+
+.First_View {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 60vw;
+     margin: auto;
+     position: absolute;
+     top: 30rem;
+     left: 28rem;
+
+     /* vertical-align: middle;
+     align-self: center; */
+}
+
+.First_View .First_Line {
+     color: var(--Orange);
+     font-size: 4rem;
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+.First_View .Second_Line {
+     color: var(--White);
+     font-size: 4rem;
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+.First_View .Third_Line {
+     text-align: center;
+     color: var(--White);
+     font-size: 1.6rem;
+     margin-bottom: 3rem;
+}
+
+.Buttons button {
+     background-color: var(--Green);
+     border: 1px solid var(--Green);
+     color: var(--White);
+     padding: 2rem;
+     width: 20rem;
+     transition: all;
+     transition-duration: 0.5s;
+     font-size: 1.6rem;
+}
+
+.Buttons button:hover {
+     background-color: transparent;
+     color: var(--Green);
+     cursor: pointer;
+}
+
+.Buttons button a {
+     background-color: var(--Green);
+     color: var(--White);
+     padding: 2rem;
+     text-decoration: none;
+     width: 20rem;
+     transition: all;
+     transition-duration: 0.5s;
+     font-size: 1.6rem;
+}
+
+.Buttons button a:hover {
+     background-color: transparent;
+     color: var(--Green);
+     cursor: pointer;
+}
+
+/* CSS OF SECOND HOME IS STARTING FROM HERE */
+
+.Second_Home_Page {
+     margin-bottom: 6rem;
+}
+
+.Second_Home_Page .heading {
+     margin-top: 6rem;
+     text-align: center;
+     margin-bottom: 1rem;
+}
+
+.Cause {
+     display: flex;
+     justify-content: space-around;
+}
+
+.Cause .Same {
+     background-color: #d392ff;
+     padding: 3rem;
+     width: 20vw;
+}
+
+.First_Paragraph {
+     font-size: 1.8rem;
+     text-align: center;
+     margin-bottom: 6rem;
+}
+
+.Cause .Same {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 10px;
+}
+
+.Cause_Heading {
+     font-size: 2rem;
+     margin-bottom: 3rem;
+}
+
+.Same .First_Paragraph {
+     margin-top: 1rem;
+     font-size: 1.5rem;
+     margin-bottom: 1rem;
+}
+
+/* CSS OF THIRD PAGE IS STARTING FROM HERE */
+
+
+/* .Third_Home_Page .heading { */
+/* text-align: center; */
+/* margin: auto;
+     margin-bottom: 6rem;
+     font-size: 3.5rem;
+     width: 34rem;
+     font-family: var(--Font_For_Heading);
+} */
+.Third_Description {
+     background-color: white;
+     box-shadow: 0px 0px 10px 2px lightgray;
+     width: 39vw;
+     padding: 5rem;
+     position: absolute;
+     top: 43rem;
+     left: 46rem;
+     /* height: 500px; */
+     /* margin-top: 5rem; */
+     /* background-color: rebeccapurple; */
+}
+
+.Team_Member {
+     display: flex;
+     /* justify-content: center; */
+     position: relative;
+}
+
+.Third_Description .Description_Paragraph {
+     font-size: 1.5rem;
+     margin-bottom: 3rem;
+     text-align: justify;
+     color: grey;
+}
+
+.Third_Home_Page {
+     width: 80vw;
+     margin: auto;
+     /* border: solid; */
+     height: 1000px;
+}
+
+.Third_Description .Inner_Heading {
+     font-size: 3rem;
+     margin-bottom: 3rem;
+     font-family: var(--Font_For_Heading);
+}
+
+/* CSS OF FOURTH HOME PAGE IS STARTING FROM HERE */
+.Fourth_Section_Outer_Division {
+     display: flex;
+     justify-content: space-around;
+}
+
+.Fourth_Home_Page {
+     height: 700px;
+}
+
+.Fourth_Section_Outer_Division .Inner_Heading {
+     font-size: 2.5rem;
+     margin-bottom: 3rem;
+     font-family: var(--Font_For_Heading);
+}
+
+.Fourth_Same {
+     padding: 2rem;
+     transition: all;
+     transition-duration: 0.25s;
+     border-radius: 8px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.Fourth_Same .First_Paragraph {
+     font-size: 1.6rem;
+}
+
+.Fourth_Same:hover {
+     box-shadow: 0px 0px 10px 10px lightgray;
+
+}
+
+/* THIS IS REALLY VERY IMPORTANT GET TO KNOW ABOUT IT FROM STACK OVERFLOW */
+.cover {
+     object-fit: cover;
+     width: 361px;
+     height: 189px;
+}
+
+.Heart_Symbol:before {
+     content: "\e813";
+}
+
+.Heart_Symbol {
+     color: #60bc0f;
+}
+
+.Second_Paragraph {
+     font-size: 2rem;
+}
+
+.Fourth_Same .Second_Paragraph {
+     margin-top: 3rem;
+}
+
+/* CSS OF THE FIFTH HOME PAGE */
+.Fifth_Home_Page {
+     background-color: var(--Green);
+     position: relative;
+     height: 300px;
+     padding: 5rem;
+}
+
+.Fifth_Home_Page .heading {
+     color: white;
+     font-size: 3.5rem;
+}
+
+.Fifth_Home_Page .Buttons button {
+     background-color: var(--Orange);
+     border: 1px solid var(--Orange);
+     color: black;
+     padding: 2rem;
+     width: 20rem;
+     transition: all;
+     transition-duration: 0.5s;
+}
+
+.Fifth_Home_Page .Buttons button:hover {
+     background-color: transparent;
+     /* color: var(--Orange); */
+     cursor: pointer;
+}
+
+.Fifth_Home_Page .Buttons button {
+     border-radius: 8px 8px 0px 0px;
+}
+
+.Fifth_Section_Outer_Division {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50vw;
+     margin: auto;
+
+}
+
+.Fifth_Home_Page .First_Paragraph {
+     color: white;
+}
+
+/* .Fifth_Home_Page .Get_In_Touch
+{
+     position: absolute;
+    border: solid;
+    top: 85%;
+    left: 45%;
+    height: 100px;
+    width: 60vw;
+    background-color: var(--Orange);
+
+} */
+.Sixth_Home_Page .heading {
+     font-family: var(--Font_For_Heading);
+}
+
+.Sixth_Section_Outer_Division {
+     display: flex;
+     justify-content: space-around;
+}
+
+.Founder {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 3rem;
+     border-radius: 8px;
+     /* background-color: lightgray; */
+}
+
+.Founder:hover {
+     box-shadow: 0px 0px 10px 10px lightgray;
+}
+
+.Founder .heading {
+     margin-top: 3rem;
+     margin-bottom: 0.5rem;
+}
+
+.Founder .Second_Paragraph {
+     text-align: center;
+     font-size: 1.5rem;
+}
+
+.Founder p {
+     margin-bottom: 3rem;
+}
+
+/* Social Media Icons */
+.fa {
+     padding: 20px;
+     font-size: 30px;
+     width: 30px;
+     text-align: center;
+     text-decoration: none;
+     margin: 5px 2px;
+}
+
+.fa-facebook {
+     background: #3B5998;
+     color: white;
+     border-radius: 100%;
+}
+
+.fa-twitter {
+     background: #55ACEE;
+     border-radius: 100%;
+     color: white;
+}
+
+.fa-linkedin {
+     background: #007bb5;
+     color: white;
+     border-radius: 100%;
+}
+
+.fa:hover {
+     box-shadow: 0px 0px 10px 5px var(--Orange);
+}
+
+/* Social Media Icons */
+
+/* CSS OF FOOTER AND LAST HOME PAGE */
+.Footer {
+     margin-top: 10rem;
+     background: #091b27;
+     /* height: 585px; */
+     padding: 2rem;
+     position: relative;
+     display: flex;
+     justify-content: space-around;
+}
+
+.Footer_Same {
+     display: flex;
+     flex-direction: column;
+     width: 30rem;
+     /* padding-top: 10rem; */
+}
+
+.Footer .heading {
+     font-family: var(--Font_For_Heading);
+     color: white;
+     text-align: justify;
+     /* height: 585px; */
+     font-size: 3rem;
+     margin-bottom: 3rem;
+}
+
+.Footer_Same p {
+     color: var(--Green);
+     text-align: justify;
+     margin-bottom: 2rem;
+}
+
+/* THIS IS USED TO SCROLL THE PAGE UP AUTOMATICALLY */
+.fas {
+     padding: 20px;
+     font-size: 30px;
+     width: 30px;
+     text-align: center;
+     text-decoration: none;
+     margin: 5px 2px;
+     position: fixed;
+     top: 85%;
+     left: 94%;
+}
+
+.fa-arrow-up {
+     background: #3B5998;
+     color: white;
+     border-radius: 100%;
+}
+
+.fas:hover {
+     box-shadow: 0px 0px 10px 5px var(--Orange);
+}
+
+/* THIS IS USED TO SCROLL THE PAGE UP AUTOMATICALLY */
+
+.Footer_Same .nav-right .nav-list {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+.Footer_Same .Work_Done_By_NGO {
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+}
+
+.Work_Done_By_NGO .Images_NGO {
+     object-fit: cover;
+     width: 100px;
+     height: 100px;
+     margin: 1rem;
+}
+/* Footer For Division 2 */
+.Footer_Division2 .Visitors .heading
+{
+     margin-top: 1rem;
+     font-size: 2rem;
+}
+html {
+     scroll-behavior: smooth;
+}
+/* Footer For Division 4 */
+.Footer_Division4 form button {
+     background-color: var(--Green);
+     border: 1px solid var(--Green);
+     color: var(--White);
+     padding: 2rem;
+     width: 20rem;
+     transition: all;
+     transition-duration: 0.5s;
+     font-size: 1.6rem;
+}
+
+.Footer_Division4 form  button:hover {
+     background-color: transparent;
+     color: var(--Green);
+     cursor: pointer;
+}
+/* DESIGN FOR THE CONTACT US DEVISION */
+.Footer_Division4 form input
+{
+     margin: 1rem 0rem 1rem 0rem;
+     text-align: center;
+     padding: 1rem;
+     border-radius: 1rem 1rem 0px 0px;
+}
+.Footer_Division4 form button
+{
+     margin: 1rem 0rem 1rem 0rem;
+     width: 23rem;
+     border-radius: 1rem 1rem 0rem 0rem;
+}

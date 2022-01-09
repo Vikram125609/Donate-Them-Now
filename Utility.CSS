@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
+
+:root {
+     --font-family: 'Rubik', sans-serif;
+     --Font-Color: white;
+     --Orange: #fdbb00;
+     --Font_For_Heading: 'Open Sans', sans-serif;
+}
+
+body {
+     font-family: var(--font-family);
+}
+
+a {
+     color: var(--Font-Color);
+}
+
+.heading {
+     margin-top: 6rem;
+     text-align: center;
+     margin-bottom: 1rem;
+     font-size: 3rem;
+}

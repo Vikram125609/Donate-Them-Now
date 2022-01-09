@@ -1,0 +1,42 @@
+.First_View .First_Line
+{
+     visibility: hidden;
+}
+.First_View .Second_Line
+{
+     visibility: hidden;
+}
+.First_View .Buttons
+{
+     visibility: hidden;
+}
+.Second_Home_Page .First_Item
+{
+     visibility: hidden;
+}
+.Second_Home_Page .Second_Item
+{
+     visibility: hidden;
+}
+.Third_Home_Page .Third_Image
+{
+     visibility: hidden;
+}
+.Third_Home_Page .Third_Description
+{
+     visibility: hidden;
+}
+/* .Fourth_Home_Page .First_Div
+{
+     visibility: hidden;
+} */
+/* .Fourth_Home_Page .Second_Div */
+/* { */
+     /* visibility: hidden; */
+     /* box-shadow: 0px 0px 10px 10px lightgray; */
+/* } */
+/* .Fourth_Home_Page .Third_Div
+{
+     visibility: hidden; 
+} */
+ 
